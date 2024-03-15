@@ -76,6 +76,7 @@ function CreateUser() {
 
         axios.post('https://reqres.in/api/users', user)
             .then((response) => {
+                alert("Ussuário criado com sucesso.\nVerifique o CONSOLE")
                 console.log(response.data)
             }).catch((error) => { console.log(error) })
 
@@ -105,18 +106,17 @@ function CreateUser() {
                         className='CreateUser-input'
                         onChange={(e) => { setEmail(e.target.value) }}
                     />
-
-                    <IMaskInput
+                    <input
                         type='text'
-                        mask={"00.000.000-*"}
                         required
-                        placeholder='Digite o seu RG...'
+                        placeholder="Digite o seu RG"
                         value={rg}
-                        maxLength={12}
-                        minLength={12}
+                        maxLength={9}
+                        minLength={9}
                         className='CreateUser-input'
                         onChange={(e) => { setRg(e.target.value) }}
                     />
+
                     <IMaskInput
                         type='text'
                         mask="000.000.000-00"
