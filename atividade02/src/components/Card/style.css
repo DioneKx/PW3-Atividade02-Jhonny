@@ -1,0 +1,46 @@
+.CardUser-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1%;
+}
+
+.CardUser-form {
+    display: flex;
+    max-width: 400px;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.CardUser-card {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #dedede;
+    margin: 10px;
+    border-radius: 10px;
+    width: 400px;
+    border: groove;
+    border: black;
+    border-width: 1px;
+    padding: 1%;
+}
+
+.CardUser-content-info {
+    text-align: center;
+}
+
+.CardUser-content-img {
+    text-align: center;
+    border-radius: 10px;
+}
+
+.CardUser-img {
+    width: 120px;
+    height: 120px;
+}
+
+.CardUser-content-card {
+
+}
